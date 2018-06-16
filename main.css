@@ -1,0 +1,124 @@
+* {
+   box-sizing: border-box;
+}
+.container {
+   margin: auto;
+   padding: 50px;
+   max-width: 960px;
+}
+header {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   border-bottom: solid #7d97ad;
+}
+footer {
+    text-align: center;
+}
+.headings {
+   padding-bottom: 12px;
+   text-align: right;
+}
+.sub-title {
+   font-family: 'Inconsolata', cursive;
+   margin-top: -15px;
+}   
+#logo {
+    display: flex;
+    height: 65px;
+    width: auto;
+}
+h1 {
+    font-family: 'Sue Ellen Francisco', Inconsolata, cursive;
+    margin-bottom: 0px;
+    font-weight: lighter;
+    font-size: 28px;
+}
+.main-project {
+   margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%; 
+}
+.gallery {
+     display: flex;
+     flex-wrap: wrap;
+     margin: 10px;
+     float: left;
+     max-width: 265px;
+     text-align: center;
+}
+.gallery img {
+     max-width: 265px;
+     height: 200px;
+}
+h2 {
+     color: #7d97ad;
+     font-size: 50px;
+     margin-top: 10px;
+     margin-bottom: 0;
+     font-weight: lighter;
+}
+h3 {
+      font-size: 30px;
+     text-transform: uppercase;
+     margin-bottom: 5px;
+     margin-top: 5px;
+     font-weight: lighter;
+}
+p { 
+   display: block;
+   text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 599px) {
+           body { background: skyblue; }
+          .container {
+             width: 100%;
+           }
+           .gallery img {
+              width: 100%;
+              height: auto;
+              magin: 5px; 
+              horizontal-align: center;
+           }
+           .main-project {
+                width: 100%;
+                 horizontal-align: center;
+            }
+           .headings { font-size: 10px; color: red; } 
+            h2 {font-size: 20px; }
+            footer { text-align: center; }
+}
+@media screen and (min-width: 600px) and (max-width: 799px) {
+          body { background: pink; }
+          .container {
+             width: 100%;
+           }
+         .gallery img {
+              width: 100%;
+              height: auto;
+              magin: 5px; 
+           }
+           .main-project {
+                width: 100%;
+                 horizontal-align: center;
+            }
+            .headings { font-size: 20px; color: blue; }
+            footer { display: none; }
+ }
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+          .container {
+             width: 100%;
+           }
+         .gallery img {
+               width: 100%;
+           }
+           .main-project {
+                width: 100%;
+                 horizontal-align: center;
+            }
+          footer { display: none; }
+          h3 { font-size: 20px; }
+          p { font-size: 10px; }
+}
